@@ -47,8 +47,8 @@ function ajouterPlat(&$plat) {
        echo "Entrer le code a rechercher \n";
        $code = (int)trim(fgets(STDIN)) ;
         foreach ($plat as $p) {
-            if ($l['code'] === $code) {
-                echo "\t Resultat : " .$l['nom']."  ".$l['prix']."  ".$l['categorie']. "\n";
+            if ($p['code'] === $code) {
+                echo "\t Resultat : " .$p['nom']."  ".$p['prix']."  ".$p['categorie']. "\n";
                      
                 return ;
             }
